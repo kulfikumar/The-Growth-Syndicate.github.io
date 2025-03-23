@@ -1,0 +1,150 @@
+/* ========== Global Reset ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ========== Body Styling ========== */
+body {
+    background: #151f31;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+/* ========== Portfolio Container ========== */
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ========== Back Button ========== */
+.back-button {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px 20px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.back-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+/* ========== Headings ========== */
+.portfolio-heading {
+    font-size: 90px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+/* Gradient Text */
+.gradient-text {
+    background: linear-gradient(90deg, #4F46E5, #EA9717);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ========== Description ========== */
+.portfolio-description {
+    font-size: 27px;
+    margin-top: 10px;
+    opacity: 0.85;
+    max-width: 700px;
+}
+
+/* ========== Portfolio Grid ========== */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+    justify-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* ========== Portfolio Boxes ========== */
+.portfolio-box {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    height: 230px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+    will-change: transform;
+    
+}
+
+
+/* Smooth Magnifying Effect */
+.portfolio-box:hover {
+    transform: scale(1.15) !important;
+}
+
+/* ========== Background Images ========== */
+.web-dev { background: url('web-dev.webp') no-repeat center center/cover; }
+.video-prod { background: url('video-prod.webp') no-repeat center center/cover; }
+.content-creation { background: url('Copy-writing.webp') no-repeat center center/cover; }
+.seo-strategy { background: url('seo-strategy.webp') no-repeat center center/cover; }
+.scriptwriting { background: url('scriptwriting.webp') no-repeat center center/cover; }
+.thumbnail-design { background: url('thumbnail-design.webp') no-repeat center center/cover; }
+
+/* ========== Overlay Effect ========== */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Overlay Text */
+.overlay h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* ========== Sequential Fade-in Animation ========== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade-in Effect */
+.fade-in {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Delay Timing */
+.delay-1 { animation-delay: 0.3s; }
+.delay-2 { animation-delay: 0.6s; }
+.delay-3 { animation-delay: 0.9s; }
+.delay-4 { animation-delay: 1.2s; }
+.delay-5 { animation-delay: 1.5s; }
+.delay-6 { animation-delay: 1.8s; }
+.delay-7 { animation-delay: 2.1s; }
+.delay-8 { animation-delay: 2.4s; }

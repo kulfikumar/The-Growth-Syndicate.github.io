@@ -1,0 +1,79 @@
+
+body {
+    background: #151f31;
+    color: white;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.contact-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    width: 400px;
+}
+.contact-heading {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.contact-subheading {
+    font-size: 18px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+button {
+    background: #4f46e5;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background: #3b38c3;
+} 
+/* Back to Home Button */
+.back-button {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;  
+    padding: 14px 20px;  
+    position: absolute;
+    top: 25px;  
+    left: 25px; 
+    background: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    
+    transition:0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect */
+.back-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);  
+}
+/* Initial state: elements start below */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When active, elements become visible and move up */
+.fade-in-up.active {
+    opacity: 1;
+    transform: translateY(0);
+}

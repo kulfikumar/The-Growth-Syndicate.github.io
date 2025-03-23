@@ -1,0 +1,104 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+
+body {
+    background: url('background.webp') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hero Section */
+.hero {
+    max-width: 80%;
+}
+
+/* Main Heading */
+.main-heading {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+/* Sub Heading */
+.sub-heading {
+    font-size: 22px;
+    margin-top: 10px;
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+/* Buttons Container */
+.button-group {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* General Button Styles */
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Explore Our Services Button */
+.btn-primary {
+    background-color: #5f57f0;
+    color: white;
+    border: none;
+}
+
+/* Hover Effect for Explore Button */
+.btn-primary:hover {
+    background-color: #3b38c3;
+}
+
+/* View Portfolio Button */
+.btn-secondary {
+    background-color: transparent;
+    color: rgb(255, 238, 1);
+    border: 2px solid rgb(255, 238, 1);
+}
+
+/* Hover Effect for View Portfolio Button */
+.btn-secondary:hover {
+    background-color: white;
+    color: #151f31;
+    border-color: #151f31;
+    
+}
+
+/* Gradient Text */
+.gradient-text {
+    background-image: linear-gradient(to right, #4F46E5, #EA9717);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Initial state: elements start below */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When active, elements become visible and move up */
+.fade-in-up.active {
+    opacity: 1;
+    transform: translateY(0);
+}

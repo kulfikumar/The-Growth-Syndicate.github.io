@@ -1,0 +1,21 @@
+body{
+    background: #151f31;
+}
+
+/* Back Button */
+.back-button {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px 20px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.back-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    
+}
